@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+html{
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+/* CONTAINERS */
+
+.big-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.small-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 6em;
+    /* background-color: #ffffff; */
+    background-color: #0061ff;
+    position: fixed;
+    z-index: 2;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+
+.nav1, .nav2{
+    background-color: white;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 4em;
+
+    /* DEBUG */
+    height: 4em;
+    width: 25%;
+}
+
+/* MAIN */
+
+/* Jumbotron */
+
+.jumbotron{
+    background-color: #b4d0e7;
+    width: 100%;
+    padding-top: 8em;
+
+
+    /* DEBUG */
+    min-height: 750px;
+}
+
+.jumbotron-row{
+    display: flex;
+}
+
+.big-container h1{
+    font-size: 5rem;
+    margin-bottom: 1em;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.col-text, .col-img{
+    width: 50%;
+    min-height: 500px;
+}
+
+.col-text{
+    padding: 2em;
+}
+
+.col-img{
+    margin-bottom: -75px;
+}
+
+/* SECTION BUSINESS PLAN */
+
+.business-plan{
+    margin-top: 200px;
+    width: 100%;
+    min-height: 200px;
+}
+
+.mini-title h2{
+    margin-bottom: 2em;
+}
+
+.second-radio{
+    margin-left: 2em;
+}
+
+.business-plan-row{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.business-plan-col{
+    width: calc(100% / 3 - 20px);
+
+    /* DEBUG */
+    min-height: 500px;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+
+.last-col{
+    width: 100%;
+
+    /* DEBUG */
+    min-height: 200px;
+
+}
+
