@@ -246,9 +246,114 @@ header{
 .big-square h2{
     /* border-bottom: 2px solid green; */
     /* height: 25%; */
-    display: block;
 }
 
 .center{
+    flex-direction: column;
+    padding: 2em 2em;
+}
 
+#first-par{
+    margin-bottom: 2em;
+    border-bottom: 2px solid green;
+}
+
+#second-par{
+    margin-top: 2em;
+}
+
+#third-par{
+    margin-top: 2em;
+}
+
+/* SECTION TRIAL */
+
+.free-trial{
+    width: 100%;
+    background-color: #b4d0e7;
+
+    /* DEBUG */
+    min-height: 300px;
+}
+
+.free-trial-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 3em;
+}
+
+.free-trial-text, .free-trial-btn{
+    width: 50%;
+    vertical-align: middle;
+    /* margin-top: 6em; */
+
+    
+}
+
+.free-trial-btn{
+    text-align: center;
+    line-height: 300px;
+}
+
+.free-trial-text{
+    align-self: center;
+}
+
+/* SECTION FAQ */
+
+.faq{
+    margin: 3em 0;
+}
+
+.faq h2{
+    margin-bottom: 3em;
+}
+
+.faq ul li{
+    list-style-type: none;
+    
+    padding: 1em 0;
+    border-top: 1px solid grey;
+}
+
+.faq ul:last-child{
+    border-bottom: 1px solid grey;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000000;
+    min-height: 300px;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em 0;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+
+.footer-col{
+    width: calc(100% / 5 - 20px);
+    height: 100%;
+    color: white;
+}
+
+.footer-col p{
+    margin-top: 4em;
+    padding-top: 2em;
+    border-top: 2px solid white;
+}
+
+footer h4{
+    margin: 2em 0;
+}
+
+footer ul li{
+    list-style-type: none;
 }
