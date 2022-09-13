@@ -35,6 +35,14 @@ ul li{
 
 }
 
+.bold{
+    font-weight: 800;
+}
+
+.checklisted i{
+    color: blue;
+}
+
 /* CONTAINERS */
 
 .big-container{
@@ -158,7 +166,7 @@ header .btn{
 .col-img{
     width: 70%;
     margin-bottom: -150px;
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 /* SECTION BUSINESS PLAN */
@@ -171,6 +179,11 @@ header .btn{
 
 .mini-title h2{
     margin-bottom: 2em;
+    font-size: 2.5rem;
+}
+
+.mini-title input{
+    margin-right: .2em;
 }
 
 .second-radio{
@@ -186,22 +199,73 @@ header .btn{
     margin-top: 2em;
 }
 
+.business-plan-col span{
+    border-bottom: 1px solid grey;
+}
+
 .business-plan-col{
     width: calc(100% / 3 - 20px);
 
     /* DEBUG */
-    min-height: 700px;
-    background-color: burlywood;
-    border: 2px solid black;
+    min-height: 900px;
+    border: 1px solid grey;
 }
+
+.business-plan-col-inner{
+    padding: 1em 1.8em;
+}
+
+.business-plan-col>p{
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: .5em 0;
+}
+
+.business-plan-col i{
+    margin-right: .4em;
+}
+
+.business-plan-col h3{
+    margin: 1em 0;
+}
+
+.business-plan-col li{
+    margin: 1em 0;
+}
+
+.business-plan-col input{
+    margin: 1em 0;
+}
+
+.business-plan-col h4{
+    margin: 2em 0;
+}
+
 
 .last-col{
     width: 100%;
+
 
     /* DEBUG */
     min-height: 300px;
 
 }
+
+.last-col-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+}
+
+.first-part-col{
+    width: 70%;
+}
+
+.second-part-col{
+    width: 30%;
+    text-align: right;
+}
+
 
 /* SECTION PARTNER */
 
