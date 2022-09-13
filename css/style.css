@@ -390,12 +390,21 @@ header .btn{
 
 .company{
     width: 50%;
-
+    position: relative;
     /* DEBUG */
     min-height: 300px;
     background-color: violet;
     border: 2px dashed orange;
 }
+
+.company img{
+    position: absolute;
+    padding: 3em 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
 
 .big-square h2{
     /* border-bottom: 2px solid green; */
