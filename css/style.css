@@ -384,8 +384,7 @@ header .btn{
     display: flex;
     flex-wrap: wrap;
 
-    /* DEBUG */
-    border: 2px solid black;
+
 }
 
 .company{
@@ -393,8 +392,7 @@ header .btn{
     position: relative;
     /* DEBUG */
     min-height: 300px;
-    background-color: violet;
-    border: 2px dashed orange;
+
 }
 
 .company img{
@@ -403,6 +401,45 @@ header .btn{
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    filter: invert(1);
+}
+
+#designit{
+    background-color: #a2d39b;
+    border: 16px solid #d1e9cd;
+
+}
+
+#asu{
+    background-color: #61082b;
+}
+
+#uf{
+    background-color: #0093ce;
+}
+
+#topps{
+    background-color: #ff1c1c;
+}
+
+#wbr{
+    background-color: #d5001f;
+}
+
+#hearst{
+    background-color: #b4d0e7;
+}
+
+#lp{
+    background-color: #0d2481;
+}
+
+#cc{
+    background-color: #ffd830;
+}
+
+.big img{
+    width: 170%;
 }
 
 
@@ -411,15 +448,17 @@ header .btn{
     /* height: 25%; */
 }
 
-.center{
-    flex-direction: column;
-    padding: 2em 2em;
+.center img{
+    width: 55%;
+    padding: 1em 0 3em;
+    border-bottom: 1px solid grey;
 }
 
-#first-par{
-    margin-bottom: 2em;
-    border-bottom: 2px solid green;
+.center{
+    flex-direction: column;
+    padding: 4em 4em;
 }
+
 
 #second-par{
     margin-top: 2em;
@@ -460,8 +499,21 @@ header .btn{
     line-height: 300px;
 }
 
+.free-trial-btn input{
+    font-size: 1em;
+    border: none;
+    padding: 1em 3em;
+    background-color: #ffffff;
+}
+
+.free-trial-btn input:hover{
+    background-color: rgba(255, 255, 255, 0.856);
+}
+
 .free-trial-text{
     align-self: center;
+    font-size: 2rem;
+    color: #61082b;
 }
 
 /* SECTION FAQ */
