@@ -35,6 +35,10 @@ ul li{
 
 }
 
+.btn:hover{
+    background-color: #0062ffc2;
+}
+
 .bold{
     font-weight: 800;
 }
@@ -272,20 +276,38 @@ header .btn{
 .partner-container{
     display: flex;
     flex-direction: row;
-    margin-top: 8em;
+    margin: 8em 0;
 
     /* DEBUG */
     min-height: 400px;
 }
 
+.grey-btn{
+    padding: .8em 1.6em;
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+}
+
+.grey-btn:hover{
+    background-color: rgba(211, 211, 211, 0.116);
+}
+
 .partner-img{
-    width: 60%;
-    background-color: chartreuse;
+    width: 65%;
 }
 
 .partner-txt{
-    width: 40%;
-    background-color: darkgoldenrod;
+    width: 35%;
+    padding: 4em 2em;
+}
+
+.partner-txt > *{
+    margin-bottom: 1.5em;
+}
+
+.partner-txt h3{
+    font-size: 1.5rem;
 }
 
 /* SECTION OPERATIONS */
@@ -293,6 +315,11 @@ header .btn{
 .operations{
     margin-top: 3em;
     text-align: center;
+}
+
+.operations-title{
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 .operations-row{
@@ -309,10 +336,9 @@ header .btn{
 .operations-col-img{
 
     /* DEBUG */
-    min-height: 300px;
-    background-color: fuchsia;
-    border: 2px solid greenyellow;
-    line-height: 300px;
+    min-height: 200px;
+
+
 }
 
 .operations-col-txt{
@@ -327,12 +353,19 @@ header .btn{
 .operations-subtitle{
     text-align: left;
     margin-top: 6em;
-    margin-bottom: 6em;
+    margin-bottom: 9em;
+    padding-right: 14em;
 }
 
 .operations-subtitle h3{
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
+    font-size: 2.4rem;
 }
+
+
+
+
+
 
 /* SECTION COMPANIES */
 
