@@ -23,6 +23,10 @@ html{
     background-color: green;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 /* CONTAINERS */
 
 .big-container{
@@ -59,12 +63,22 @@ header{
 .nav1, .nav2{
     background-color: white;
     border: 1px solid red;
-    text-align: center;
     line-height: 4em;
+
 
     /* DEBUG */
     height: 4em;
     width: 25%;
+}
+
+.nav1{
+    display: flex;
+    flex-direction: row
+}
+
+header a{
+    text-decoration: none;
+    color: grey;
 }
 
 /* MAIN */
