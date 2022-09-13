@@ -27,10 +27,18 @@ ul li{
     list-style-type: none;
 }
 
+.btn{
+    background-color: #0061ff;
+    color: white;
+    border: none;
+    padding: .4em .8em;
+
+}
+
 /* CONTAINERS */
 
 .big-container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -44,10 +52,10 @@ ul li{
 header{
     width: 100%;
     height: 6em;
-    /* background-color: #ffffff; */
-    background-color: #0061ff;
+    background-color: white;
     position: fixed;
     z-index: 2;
+    line-height: 6em;
 }
 
 .header-container{
@@ -58,17 +66,22 @@ header{
     justify-content: space-between;
 }
 
+header ul{
+    display: flex;
 
+}
+
+header img{
+    vertical-align: middle;
+}
+
+ul li:not(:last-child){
+    margin-right: 2em;
+}
 
 .nav1, .nav2{
     background-color: white;
-    border: 1px solid red;
-    line-height: 4em;
-
-
-    /* DEBUG */
-    height: 4em;
-    width: 25%;
+    padding: 0 1em;
 }
 
 .nav1{
@@ -81,6 +94,10 @@ header a{
     color: grey;
 }
 
+header .btn{
+    vertical-align: middle;
+}
+
 /* MAIN */
 
 /* Jumbotron */
@@ -88,20 +105,21 @@ header a{
 .jumbotron{
     background-color: #b4d0e7;
     width: 100%;
-    padding-top: 8em;
+    padding-top: 150px;
 
 
     /* DEBUG */
-    min-height: 750px;
+    min-height: 450px;
 }
 
 .jumbotron-row{
     display: flex;
 }
 
-.big-container h1{
+.jumbotron h1{
     font-size: 5rem;
     margin-bottom: 1em;
+    font-weight: 800;
 }
 
 .title{
@@ -110,16 +128,37 @@ header a{
 }
 
 .col-text, .col-img{
-    width: 50%;
+
     min-height: 500px;
 }
 
+
 .col-text{
-    padding: 2em;
+    width: 30%;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .col-text *{
+    margin-bottom: 2em;
+} */
+
+.col-text .btn{
+    font-size: 1em;
+    padding: .8em;
+}
+
+.col-text i{
+    font-size: 3em;
+    color: black;
 }
 
 .col-img{
-    margin-bottom: -75px;
+    width: 70%;
+    margin-bottom: -150px;
+    padding-top: 3em;
 }
 
 /* SECTION BUSINESS PLAN */
