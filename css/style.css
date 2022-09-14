@@ -84,10 +84,10 @@ header ul{
 }
 
 header img{
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
 
-ul li:not(:last-child){
+header ul li:not(:last-child){
     margin-right: 2em;
 }
 
@@ -107,7 +107,7 @@ header a{
 }
 
 header .btn{
-    vertical-align: middle;
+    vertical-align: text-top;
 }
 
 /* MAIN */
@@ -152,10 +152,6 @@ header .btn{
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* .col-text *{
-    margin-bottom: 2em;
-} */
 
 .col-text .btn{
     font-size: 1em;
@@ -203,9 +199,9 @@ header .btn{
     margin-top: 2em;
 }
 
-.business-plan-col span{
+/* .business-plan-col span{
     border-bottom: 1px solid grey;
-}
+} */
 
 .business-plan-col{
     width: calc(100% / 3 - 20px);
@@ -217,6 +213,11 @@ header .btn{
 
 .business-plan-col-inner{
     padding: 1em 1.8em;
+}
+
+.business-plan-col-inner hr{
+    margin: 3em 0;
+    width: 25%;
 }
 
 .business-plan-col>p{
@@ -519,18 +520,39 @@ header .btn{
 /* SECTION FAQ */
 
 .faq{
-    margin: 3em 0;
+    margin: 9em 0;
 }
 
 .faq h2{
-    margin-bottom: 3em;
+    font-size: 2.5rem;
+    margin-bottom: 2em;
 }
 
 .faq ul li{
     list-style-type: none;
     
-    padding: 1em 0;
+    padding: 2em 0;
     border-top: 1px solid grey;
+}
+
+.faq-small-container li{
+    position: relative;
+}
+
+.faq-small-container i{
+
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50% , 0%);
+}
+
+.faq-small-container p{
+    display: none;
+}
+
+.faq-small-container i:active{
+    transform: rotate(180deg);
 }
 
 .faq ul:last-child{
