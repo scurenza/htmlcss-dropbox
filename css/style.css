@@ -116,6 +116,14 @@ header .btn{
     display: inline;
 }
 
+header li{
+    border-bottom: 2px solid white;
+}
+
+header {
+    border-bottom: 2px solid white;
+}
+
 header li:hover{
     border-bottom: 2px solid blue;
 }
@@ -388,28 +396,26 @@ header li:hover{
 /* SECTION COMPANIES */
 
 .companies{
-    width: 100%;
+    width: 99.14vw;
     display: flex;
-
-    /* DEBUG */
-    min-height: 600px;
     background-color: #f5f5f5;
 }
 
 .big-square{
-    width: calc(100% / 3);
-    min-height: 100%;
+    width: 33vw;
+    min-height: 33vw;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 
 
 }
 
 .company{
-    width: 50%;
+    width: 16.5vw;
     position: relative;
     /* DEBUG */
-    min-height: 300px;
+    height: 16.5vw;
 
 }
 
@@ -457,18 +463,14 @@ header li:hover{
 }
 
 .big img{
-    width: 170%;
+    width: 20vw;
 }
 
-
-.big-square h2{
-    /* border-bottom: 2px solid green; */
-    /* height: 25%; */
-}
 
 .center img{
-    width: 55%;
-    padding: 1em 0 3em;
+    width: 12vw;
+    padding: 1em 0 2em;
+    display: block;
 }
 
 .center hr{
@@ -476,8 +478,18 @@ header li:hover{
 }
 
 .center{
+    /* display: flex;
     flex-direction: column;
-    padding: 4em 4em;
+    align-content: flex-start; */
+    padding: 3vw;
+    width: 33vw;
+    max-height: 33vw;
+
+
+}
+
+.center p{
+
 }
 
 
@@ -645,10 +657,14 @@ footer a{
     color: white;
 }
 
-.footer-col p > :first-child{
+.lang{
+    color: grey;
+}
+
+.footer-col a > :first-child{
     margin-right: .4em;
 }
 
-.footer-col p:hover > :last-child{
+.footer-col a:hover > :last-child{
     transform: rotate(180deg);
 }
