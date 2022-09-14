@@ -192,6 +192,8 @@ header .btn{
 .business-plan-col a.btn{
     text-decoration: none;
     margin: 2em 0;
+    width: 100%;
+    text-align: center;
 }
 
 .link{
@@ -463,7 +465,10 @@ header .btn{
 .center img{
     width: 55%;
     padding: 1em 0 3em;
-    border-bottom: 1px solid grey;
+}
+
+.center hr{
+    width: 20%;
 }
 
 .center{
@@ -612,9 +617,13 @@ footer{
 }
 
 .footer-col p{
-    margin-top: 4em;
-    padding-top: 2em;
-    border-top: 2px solid white;
+    color: grey;
+    display: inline-block;
+}
+
+.footer-col hr{
+    margin: 4em 0;
+    width: 40%;
 }
 
 footer h4{
@@ -624,9 +633,18 @@ footer h4{
 
 footer ul li{
     list-style-type: none;
+    margin-bottom: .8em;
 }
 
 footer a{
     text-decoration: none;
     color: white;
+}
+
+.footer-col p > :first-child{
+    margin-right: .4em;
+}
+
+.footer-col p:hover > :last-child{
+    transform: rotate(180deg);
 }
