@@ -116,6 +116,10 @@ header .btn{
     display: inline;
 }
 
+header li:hover{
+    border-bottom: 2px solid blue;
+}
+
 /* MAIN */
 
 /* Jumbotron */
