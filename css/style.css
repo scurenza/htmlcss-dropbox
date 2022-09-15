@@ -484,6 +484,7 @@ header li:hover{
     padding: 3vw;
     width: 33vw;
     max-height: 33vw;
+    overflow-y: auto;
 
 
 }
